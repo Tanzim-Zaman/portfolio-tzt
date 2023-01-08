@@ -1,0 +1,974 @@
+/* Font url... */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+/* Font url... */
+
+/* Basic style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1E1E1E;
+}
+/* Basic style */
+
+/* Style for mobile starts here... */
+.container{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: fit-content;
+}
+
+/* Style for header starts here... */
+header{
+    background-image: url(image/header/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: left;
+}
+    /* Style for logo and nevigation bar starts here... */
+.logo-nav{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo-nav .logo{
+    text-align: center;
+    font-size: 30px;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-nav .logo .logo-txt{
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    padding: 20px;
+}
+.logo-nav .logo .logo-txt > span{
+    color: #FB414E;
+}
+
+.logo-nav nav{
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+    grid-column: 2 / -1;
+    display: flex;
+    justify-content: end;
+}
+.logo-nav nav .navigation{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-nav nav .navigation .nav-item{
+    padding: 10px 0;
+}
+.logo-nav nav .navigation .nav-item > a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+.logo-nav nav .navigation .nav-item > a:hover{
+    border-bottom: 1px solid #FB414E;
+}
+    /* Style for logo and nevigation bar ends here... */
+
+
+    /* Style for header texts and buttons starts here... */
+.header-text-btn{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-texts{
+    text-align: center;
+}
+.header-texts > h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 24px;
+}
+.header-texts > p{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 8px;
+    margin-top: 20px;
+}
+
+.header-btn{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.header-btn > div > .btn{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FB414E;
+    padding: 10px 30px;
+    border: 1px solid #FB414E;
+}
+.header-btn > div > .btn:hover{
+    background-color: #FB414E;
+    color: #FFFFFF;
+}
+    /* Style for header texts and buttons ends here... */
+
+/* Style for header ends here... */
+
+
+/* Style for the main part starts here... */
+
+    /* Style for the features section starts here... */
+.features{
+    width: 95%;
+    margin: 0 auto;
+}
+.features > div{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #202B30;
+}
+.features > div:hover{
+    background-color: #FB414E;
+}
+.features > div > i{
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+.features > div > h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 20px;
+    position: relative;
+}
+.features > div > h3::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #FFFFFF;
+    top: 40px;
+    left: calc(50% - 50px);
+}
+.features > div > p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+    /* Style for the features section ends here... */
+
+    
+    /* Style for the details section starts here... */
+
+.details{
+    width: 95%;
+    height: fit-content;
+    background-color: #202B30;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.details .details-txt-btn{
+    width: 95%;
+    margin: 0 auto;
+}
+.details .details-txt-btn .details-title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+.details .details-txt-btn .details-txt{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+.details .details-txt-btn .details-start-btn{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.details .details-txt-btn .details-start-btn > a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border: 1px solid #FFFFFF;
+}
+.details .details-txt-btn .details-start-btn > a:hover{
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+}
+
+.details .details-image{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.details .details-image > img{
+    width: 100px;
+    height: 145px;
+}
+.details .details-image .blank{
+    width: 100px;
+    height: 145px;
+    background-color: #FB414E;
+}
+
+    /* Style for the details section ends here... */
+
+
+    /* Style for services section starts here... */
+
+.services{
+    width: 95%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+.services .service-details{
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+}
+.services .service-details .service-title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+}
+.services .service-details .service-txt{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #838383;
+    margin-top: 10px;
+}
+
+.services .service-steps{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.services .service-steps .steps{
+    width: 50%;
+    height: fit-content;
+    margin: 10px 0;
+    text-align: justify;
+}
+.services .service-steps .steps:nth-child(even){
+    margin-left: 50%;
+}
+.services .service-steps .steps .step-title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.services .service-steps .steps .step-txt{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #838383;
+}
+
+    /* Style for services section ends here... */
+
+
+    /* Style for rivew part starts here... */
+
+.rivew{
+    width: 95%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+.rivew .rivew-detail{
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+}
+.rivew .rivew-detail .rivew-title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+.rivew .rivew-detail .rivew-txt{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #838383;
+    margin-top: 10px;
+}
+.rivew .rivew-detail .rivew-btn{
+    width: fit-content;
+    height: fit-content;
+    margin: 30px auto;
+}
+.rivew .rivew-detail .rivew-btn .btn{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 30px;
+    border: 1px solid #000000;
+}
+.rivew .rivew-detail .rivew-btn .btn:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.rivew .rivew-image{
+    width: 60%;
+    height: fit-content;
+    margin: 0 auto;
+}
+.rivew .rivew-image > img{
+    width: 100%;
+    height: auto;
+}
+
+    /* Style for rivew part ends here... */
+
+
+    /* Style for handcraft part starts here... */
+
+.handcraft{
+    width: 95%;
+    height: fit-content;
+    margin: 0 auto;
+    background-image: url(image/handcraft/Assignment.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    margin-top: 40px;
+}
+.handcraft-container{
+    width: 60%;
+    height: fit-content;
+}
+.handcraft .handcraft-container .handcraft-details .handcraft-title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}
+.handcraft .handcraft-container .handcraft-details .handcraft-txt{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #838383;
+    text-align: justify;
+    margin-top: 10px;
+}
+.handcraft .handcraft-container .handcraft-features{
+    margin-top: 10px;
+}
+.handcraft .handcraft-container .handcraft-features > div > div{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+.handcraft .handcraft-container .handcraft-features > div > div > img{
+    width: 30px;
+    height: auto;
+}
+.handcraft .handcraft-container .handcraft-features > div > h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.handcraft .handcraft-container .handcraft-features > div > p{
+    font-family: 'Roboto', sans-serif;
+    color: #838383;
+    text-align: justify;
+}
+
+    /* Style for handicraft part ends here... */
+
+    /* Style for the order part starts here... */
+
+.order{
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 40px;
+}
+.order .order-details{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+.order .order-details .order-title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+}
+.order .order-details .order-txt{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #838383;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.order .order-form{
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.order .order-form > form #full-name{
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 0;
+}
+.order .order-form > form .company-mail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.order .order-form > form .company-mail #company{
+    width: 48%;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 0;
+}
+.order .order-form > form .company-mail #email{
+    width: 48%;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 0;
+}
+.order .order-form > form #select-service{
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 0;
+    margin-top: 10px;
+}
+.order .order-form > form #description{
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 0;
+    margin-top: 10px;
+}
+.order .order-form > form #submit{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #FB414E;
+    color: #FFFFFF;
+    border-radius: 0;
+    border: none;
+    margin-top: 10px;
+}
+
+    /* Style for the order part ends here... */
+
+/* Style for the main part ends here... */
+
+
+/* Style for the footer part starts here... */
+
+footer{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: #202B30;
+}
+footer .footer-container .part-1 .footer-contact{
+    width: 70%;
+    margin: 0 auto;
+    margin-left: 30%;
+    text-align: right;
+}
+footer .footer-container .part-1 .footer-contact > h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: #F8F8F8;
+    font-size: 20px;
+}
+footer .footer-container .part-1 .footer-contact > p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 10px;
+}
+footer .footer-container .part-1 .social-media{
+    width: 30%;
+    margin: 0 auto;
+}
+footer .footer-container .part-1 .social-media > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+footer .footer-container .part-1 .social-media > ul > li > a{
+    background-color: #FB414E;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    padding-right: 0;
+}
+footer .footer-container .part-1 .social-media > ul > li > a > i{
+    width: 20px;
+    height: auto;
+    color: #202B30;
+}
+
+footer .footer-container .part-2{
+    width: 100%;
+    margin-top: 30px;
+}
+footer .footer-container .part-2 .footer-nav{
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+}
+footer .footer-container .part-2 .footer-nav > ul{
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-container .part-2 .footer-nav > ul > li >a{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+footer .footer-container .part-2 .footer-nav > ul > li >a:hover{
+    border-bottom: 1px solid #FB414E;
+}
+footer .footer-container .part-2 .footer-form{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+footer .footer-container .part-2 .footer-form > form label{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    text-align: right;
+    display: block;
+}
+footer .footer-container .part-2 .footer-form > form #email{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+}
+footer .footer-container .part-2 .footer-form > form #footer-sub{
+    width: 28%;
+    border-radius: 0;
+    border: none;
+    padding: 10px;
+    background-color: #FB414E;
+    color: #FFFFFF;
+}
+
+footer .footer-container .part-2 .ending{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+footer .footer-container .part-2 .ending > p{
+    font-family: 'Roboto', sans-serif;
+    color: #838383;
+    font-size: 12px;
+}
+
+
+/* Style for the footer part ends here... */
+
+/* Style for mobile ends here... */
+
+
+
+/* Style for tablet starts here... */
+
+@media screen and (min-width: 600px) {
+    /* Style for header starts here... */
+    .logo-nav{
+        display: block;
+    }
+    .logo-nav .logo{
+        height: 150px;
+        align-items: center;
+    }
+    .logo-nav nav{
+        display: block;
+        margin-top: 10px;
+    }
+    .logo-nav nav .navigation{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .header-text-btn{
+        padding-bottom: 70px;
+    }
+    .header-texts > h1{
+        font-size: 26px;
+    }
+    .header-texts > p{
+        font-size: 10px;
+    }
+    .header-btn{
+        width: 70%;
+        justify-content: space-evenly;
+    }
+    /* Style for header ends here... */
+
+    /* Style for the main part starts here... */
+
+        /* Style for the features section starts here... */
+    .features{
+        display: flex;
+        justify-content: space-evenly;
+        z-index: 999;
+        margin-top: -40px;
+    }
+    .features > div{
+        height: auto;
+        width: 30%;
+        text-align: left;
+    }
+    .features > div > h3{
+        font-size: 14px;
+    }
+    .features > div > h3::after{
+        width: 40px;
+        left: 0;
+    }
+    .features > div > p{
+        font-size: 10px;
+    }
+        /* Style for the features section ends here... */
+
+        /* Style for the details section starts here... */
+
+    .details{
+        padding: 30px;
+    }
+    .details .details-txt-btn .details-title{
+        font-size: 28px;
+    }
+    .details .details-image{
+        width: 40%;
+    }
+
+        /* Style for the details section ends here... */
+
+        /* Style for services section starts here... */
+
+    .services{
+        padding: 20px;
+    }
+    .services .service-details .service-title{
+        font-size: 26px;
+    }
+    .services .service-details .service-txt{
+        font-size: 14px;
+    }
+    .services .service-steps{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .services .service-steps .steps{
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+    }
+    .services .service-steps .steps:nth-child(even){
+        margin-left: 0;
+    }
+
+        /* Style for services section ends here... */
+
+        /* Style for rivew part starts here... */
+
+    .rivew{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .rivew .rivew-detail .rivew-txt{
+        font-size: 10px;
+    }
+    .rivew .rivew-detail .rivew-btn{
+        margin: 20px 0;
+    }
+    .rivew .rivew-detail .rivew-btn .btn{
+        font-size: 12px;
+        padding: 5px 30px;
+    }
+    .rivew .rivew-image{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+        /* Style for rivew part ends here... */
+
+        /* Style for handcraft part starts here... */
+
+    .handcraft{
+        padding: 20px;
+    }
+    .handcraft-container{
+        width: 60%;
+    }
+    .handcraft .handcraft-container .handcraft-details .handcraft-txt{
+        font-size: 12px;
+    }
+    .handcraft .handcraft-container .handcraft-features{
+        display: flex;
+    }
+    .handcraft .handcraft-container .handcraft-features > div{
+        width: 95%;
+        padding: 10px;
+    }
+    .handcraft .handcraft-container .handcraft-features > div > div{
+        margin: 0;
+    }
+    .handcraft .handcraft-container .handcraft-features > div > h3{
+        text-align: left;
+        font-size: 16px;
+    }
+    .handcraft .handcraft-container .handcraft-features > div > p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+        /* Style for handcraft part ends here... */
+
+    /* Style for the main part ends here... */
+
+    /* Style for the footer part starts here... */
+
+    footer .footer-container .part-2 .footer-nav > ul{
+        justify-content: space-evenly;
+    }
+    footer .footer-container .part-2 .footer-nav > ul > li >a{
+        font-size: 12px;
+    }
+
+    /* Style for the footer part ends here... */
+}
+
+/* Style for tablet ends here... */
+
+
+
+/* Style for laptop and larg screen starts here... */
+
+@media screen and (min-width: 900px) {
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .logo-nav{
+        display: flex;
+        align-items: center;
+    }
+    .logo-nav .logo{
+        flex-basis: 30%;
+    }
+    .logo-nav nav{
+        flex-basis: 70%;
+    }
+    .header-texts > h1{
+        font-size: 28px;
+    }
+    .header-texts > p{
+        font-size: 12px;
+    }
+    .header-btn{
+        width: 50%;
+        margin: 40px auto;
+    }
+
+    .features{
+        width: 70%;
+    }
+    .features > div > h3{
+        font-size: 16px;
+    }
+    .features > div > p{
+        font-size: 12px;
+    }
+
+    .details{
+        padding: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .details .details-txt-btn{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+    .details .details-txt-btn .details-title{
+        text-align: left;
+    }
+    .details .details-txt-btn .details-txt{
+        text-align: justify;
+        font-size: 14px;
+    }
+    .details .details-txt-btn .details-start-btn{
+        margin: 0;
+        margin-top: 30px;
+    }
+    .details .details-image{
+        width: 80%;
+        margin-top: 0;
+    }
+    .details .details-image > img{
+        width: 47%;
+        height: auto;
+    }
+    .details .details-image .blank{
+        width: 47%;
+        height: 100%;
+    }
+
+    .services{
+        padding: 60px;
+        display: flex;
+    }
+    .services .service-details{
+        order: 1;
+        padding: 0 0 0 10px;
+    }
+    .services .service-steps{
+        margin-top: 0;
+        padding: 0;
+        padding-right: 20px;
+        height: 100%;
+    }
+    .services .service-steps .steps{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        padding-right: 10px;
+    }
+    .services .service-steps .steps .step-txt{
+        font-size: 14px;
+    }
+
+    .rivew{
+        padding: 40px;
+    }
+    .rivew .rivew-detail{
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+    .rivew .rivew-detail .rivew-title{
+        font-size: 26px;
+    }
+    .rivew .rivew-detail .rivew-txt{
+        font-size: 16px;
+    }
+
+    .handcraft{
+        padding: 60px;
+    }
+    .handcraft-container{
+        width: 40%;
+    }
+
+    .order{
+        padding: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .order .order-details{
+        height: 100%;
+        padding-right: 20px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    .order .order-details .order-title{
+        font-size: 36px;
+        text-align: left;
+    }
+    .order .order-details .order-txt{
+        font-size: 16px;
+    }
+    .order .order-form{
+        margin: 0;
+    }
+
+    footer .footer-container{
+        display: flex;
+    }
+    footer .footer-container > div{
+        flex-basis: 50%;
+    }
+    footer .footer-container .part-1 .footer-contact{
+        text-align: left;
+        margin: 0;
+        margin-top: 20px;
+    }
+    footer .footer-container .part-1 .social-media{
+        margin: 0;
+        margin-top: 30px;
+    }
+    
+}
+
+/* Style for laptop and larg screen ends here... */
